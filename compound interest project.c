@@ -6,7 +6,7 @@ int main()
  float p, A ,r ;
 
   printf("Enter principal:");
-  scanf("&f", &p);
+  scanf("%f", &p);
   printf("Enter rate : ");
   scanf("%f", &r);
   printf("Enter time :");
@@ -15,7 +15,7 @@ int main()
   scanf("%d", &n);
 
   A=p * pow((1+r/n),n*t);
-  printf("Total Amount is %f \n");
+  printf("Total Amount is %f \n",A);
 
     return 0;
 }
