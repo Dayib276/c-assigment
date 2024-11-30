@@ -29,11 +29,11 @@ int main ()
   }
    else if(daysOverdue<=14) {
             fineRate=50;// Ksh 50 per day for 8 to 14 days
-            7*20+(daysOverdue-7)*50;
+           fineAmount=  (7*20)+(daysOverdue-7)*50;
     }
     else {
           fineRate=100;// Ksh 100 per day for 15 or more days
-         (20*7)+(50*7)+((daysOverdue-14)*100);
+           fineAmount=  (20*7)+(50*7)+((daysOverdue-14)*100);
     }
 
         printf("\n---Library Fine Details ---\n");
@@ -41,8 +41,8 @@ int main ()
         printf("Due Date :%d \n", dueDate);
         printf(";Return Date : %d \n", returnDate);
         printf("Days Overdue : %d \n", daysOverdue);
-        printf("Fine Rate (Ksh per day) : %d \n", fineRate);
-        printf("Total Fine Amount(Ksh per day): %d \n",fineAmount);
+        printf("Fine Rate (Ksh per day) : %f \n", fineRate);
+        printf("Total Fine Amount(Ksh per day): %f \n",fineAmount);
 
     return 0;
 }
